@@ -10,7 +10,7 @@ const WeatherCard = ({
     country,
     sunset,
   }) => {
-    const [weatherState, setWeatheState] = useState("");
+    const [weatherState, setWeatheState] = useState("Mirzapur");
 
     useEffect(() => {
         if (weatherkamood) {
@@ -19,14 +19,20 @@ const WeatherCard = ({
               setWeatheState("wi-day-cloudy");
               break;
             case "Haze":
-              setWeatheState("wi-fog");
+              setWeatheState("wi-day-haze");
               break;
             case "Clear":
               setWeatheState("wi-day-sunny");
               break;
-            case "Mist":
+            case "mist":
               setWeatheState("wi-dust");
               break;
+              case "SMOKE":
+                  setWeatheState("wi-smoket")
+                  break;
+                  case "rain":
+                      setWeatheState("wi-rain")
+                      break;
     
             default:
               setWeatheState("wi-day-sunny");
