@@ -27,7 +27,7 @@ const WeatherCard = ({
             case "Mist":
               setWeatheState("wi-dust");
               break;
-              case "SMOKE":
+              case "Smoke":
                   setWeatheState("wi-smoket")
                   break;
                   case "Rain":
