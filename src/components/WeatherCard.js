@@ -24,13 +24,13 @@ const WeatherCard = ({
             case "Clear":
               setWeatheState("wi-day-sunny");
               break;
-            case "mist":
+            case "Mist":
               setWeatheState("wi-dust");
               break;
               case "SMOKE":
                   setWeatheState("wi-smoket")
                   break;
-                  case "rain":
+                  case "Rain":
                       setWeatheState("wi-rain")
                       break;
     
